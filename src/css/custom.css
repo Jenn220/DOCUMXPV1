@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
+
+:root {
+  /* Colores principales de KFC */
+  --ifm-color-primary: #e4002b;
+  --ifm-color-primary-dark: #cc0027;
+  --ifm-color-primary-darker: #bf0024;
+  --ifm-color-primary-darkest: #9e001e;
+  --ifm-color-primary-light: #ff0030;
+  --ifm-color-primary-lighter: #ff1a43;
+  --ifm-color-primary-lightest: #ff3356;
+
+  /* Colores de superficie */
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #f8f9fa;
+  
+  /* Colores de texto */
+  --ifm-font-color-base: #495057;
+  --ifm-font-color-secondary: #6c757d;
+  
+  /* Fuente */
+  --ifm-font-family-base: Arial, sans-serif;
+  --ifm-heading-font-family: Arial, sans-serif;
+  
+  /* Tamaño de código */
+  --ifm-code-font-size: 95%;
+  
+  /* Bordes */
+  --ifm-global-border-width: 1px;
+  --ifm-border-color: #dee2e6;
+  
+  /* Sombras */
+  --ifm-global-shadow-lw: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  --ifm-global-shadow-md: 0 5px 40px rgba(0, 0, 0, 0.2);
+  --ifm-global-shadow-tl: 0 12px 28px 0 rgba(0, 0, 0, 0.2);
+  
+  /* Línea de código resaltada */
+  --docusaurus-highlighted-code-line-bg: rgba(228, 0, 43, 0.1);
+}
+
+/* Tema oscuro */
+[data-theme='dark'] {
+  --ifm-color-primary: #ff1a43;
+  --ifm-color-primary-dark: #ff0030;
+  --ifm-color-primary-darker: #f5002d;
+  --ifm-color-primary-darkest: #cc0027;
+  --ifm-color-primary-light: #ff3356;
+  --ifm-color-primary-lighter: #ff4d69;
+  --ifm-color-primary-lightest: #ff667c;
+  
+  --ifm-background-color: #1e1e1e;
+  --ifm-background-surface-color: #252525;
+  
+  --ifm-font-color-base: #e9ecef;
+  --ifm-font-color-secondary: #adb5bd;
+  
+  --docusaurus-highlighted-code-line-bg: rgba(255, 26, 67, 0.3);
+}
+
+/* Navbar personalizado */
+.navbar {
+  background-color: #e4002b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__title {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+.navbar__item {
+  color: #ffffff !important;
+}
+
+.navbar__link:hover {
+  color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+/* Sidebar */
+.menu__link {
+  border-radius: 4px;
+}
+
+.menu__link:hover {
+  background-color: rgba(228, 0, 43, 0.1);
+}
+
+.menu__link--active {
+  background-color: rgba(228, 0, 43, 0.15);
+  color: #e4002b;
+  font-weight: 600;
+}
+
+/* Tablas */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem;
+  border: 1px solid #dee2e6;
+}
+
+table td {
+  padding: 0.75rem;
+  border: 1px solid #dee2e6;
+}
+
+table tr:hover {
+  background-color: rgba(228, 0, 43, 0.05);
+}
+
+/* Bloques de código */
+.prism-code {
+  border-radius: 6px;
+}
+
+/* Badges y tags */
+.badge {
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.footer__link-item {
+  color: #ffffff;
+}
+
+.footer__link-item:hover {
+  color: #ff1a43;
+}
+
+/* Botones */
+.button {
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.button--primary {
+  background-color: #e4002b;
+  border-color: #e4002b;
+}
+
+.button--primary:hover {
+  background-color: #cc0027;
+  border-color: #cc0027;
+}
+
+/* Alertas/Admoniciones */
+.admonition {
+  border-radius: 6px;
+  border-left-width: 4px;
+}
+
+.admonition-heading {
+  font-weight: 600;
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e4002b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cc0027;
+}
+
+/* Mejorar legibilidad de checkbox lists */
+.task-list-item {
+  list-style-type: none;
+}
+
+.task-list-item input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Animaciones suaves */
+* {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}

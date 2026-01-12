@@ -1,0 +1,19 @@
+## Obtener Todos los Tipos de Producto
+
+### Método HTTP
+
+`GET`
+
+### URL
+
+```
+{{server_BO_Menus}}/api/v1/product/getallproducttypes
+```
+
+### Parámetros de Query
+
+No requiere parámetros de query.
+
+### Cuerpo de la Solicitud
+
+No requiere cuerpo en la solicitud.
